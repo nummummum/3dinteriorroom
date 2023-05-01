@@ -1,0 +1,44 @@
+.mainpage {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  .main_subtitle {
+    margin: 50px 0;
+    font-size: 30px;
+    font-weight: 500;
+  }
+  .popular_wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .image_first,
+    .image_second,
+    .image_third {
+      cursor: pointer;
+      background-color: #eee;
+      width: 160px;
+      height: 160px;
+      margin: 30px;
+      border: 1px solid black;
+    }
+  }
+  .btncenter {
+    width: fit-content;
+    margin: 0 auto;
+  }
+  .popularproduct_wrap,
+  .popularshowroom_wrap {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 800px;
+    margin: 0 auto;
+    > li {
+      margin: 10px 30px;
+    }
+  }
+}

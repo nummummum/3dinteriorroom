@@ -1,0 +1,19 @@
+.bannercard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+  background-image: url("/public/images/bannercard1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  > .bannertitlewrap {
+    margin: 40px 0;
+    > h4 {
+      font-size: 36px;
+      font-weight: 500;
+      color: white;
+      margin: 10px 0;
+    }
+  }
+}

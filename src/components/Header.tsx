@@ -1,3 +1,41 @@
+import "./Header.scss";
+
 export default function Header() {
-  return <section></section>;
+  return (
+    <section className="header">
+      <div className="header_left">
+        <div className="menubar close">
+          <span className="span_top"></span>
+          <span className="span_middle"></span>
+          <span className="span_bottom"></span>
+        </div>
+        <h1 className="header_title">S3IR</h1>
+        <ul className="left_menu_wrap">
+          <li className="item">상품 판매</li>
+          <li className="item">커뮤니티</li>
+          <li className="item">프로모션</li>
+          <li className="item">About</li>
+        </ul>
+      </div>
+      <div className="header_right">
+        <ul className="right_menu_wrap">
+          <li className="item">
+            <div className="icon">
+              <img src="" alt="" />
+            </div>
+            <p>장바구니</p>
+          </li>
+          <li className="item">
+            <div className="icon">
+              <img src="" alt="" />
+            </div>
+            <p>마이페이지</p>
+          </li>
+          <li className="item">로그인</li>
+          <li className="item">가입하기</li>
+          <li className="item">Interior</li>
+        </ul>
+      </div>
+    </section>
+  );
 }

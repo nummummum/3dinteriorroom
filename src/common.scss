@@ -1,0 +1,21 @@
+body {
+  font-family: "Noto Sans KR", sans-serif;
+  letter-spacing: -0.2px;
+
+  .btnwrap {
+    padding: 10px 30px;
+    cursor: pointer;
+    &.white {
+      color: white;
+      border: 3px solid white;
+    }
+    &.black {
+      color: black;
+      border: 3px solid black;
+      &.reverse {
+        background-color: black;
+        color: white;
+      }
+    }
+  }
+}
