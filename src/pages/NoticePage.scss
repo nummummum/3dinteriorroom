@@ -1,0 +1,39 @@
+.noticepage {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  > .title {
+    display: block;
+    position: relative;
+    width: 1040px;
+    font-size: 24px;
+    font-weight: 500;
+  }
+  > .promotionwrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1200px;
+    flex-wrap: wrap;
+    > li {
+      margin: 20px;
+    }
+  }
+  .numberbarwrap {
+    > .numberbar {
+      display: flex;
+      li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30px;
+        height: 30px;
+        color: white;
+        background-color: black;
+        margin: 5px;
+      }
+    }
+  }
+}

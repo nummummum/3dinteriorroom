@@ -1,12 +1,16 @@
 .bannercard {
   display: flex;
+  position: relative;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 600px;
-  background-image: url("/public/images/bannercard1.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
+  > img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
   > .bannertitlewrap {
     margin: 40px 0;
     > h4 {

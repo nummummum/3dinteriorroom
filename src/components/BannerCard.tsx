@@ -7,6 +7,7 @@ export default function BannerCard(props: {
   let titleArr = splitTitle(props.title);
   return (
     <section className="bannercard">
+      <img src={props.imgUrl} alt="" />
       <div className="bannertitlewrap">
         {titleArr.map((item, index) => {
           return <h4 key={index + ": bannercard title"}>{item}</h4>;

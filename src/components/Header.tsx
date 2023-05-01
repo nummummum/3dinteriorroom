@@ -1,6 +1,8 @@
+import { useNavigate } from "react-router-dom";
 import "./Header.scss";
 
 export default function Header() {
+  const navigate = useNavigate();
   return (
     <section className="header">
       <div className="header_left">
@@ -9,11 +11,25 @@ export default function Header() {
           <span className="span_middle"></span>
           <span className="span_bottom"></span>
         </div>
-        <h1 className="header_title">S3IR</h1>
+        <h1
+          className="header_title"
+          onClick={() => {
+            navigate("/");
+          }}
+        >
+          S3IR
+        </h1>
         <ul className="left_menu_wrap">
           <li className="item">상품 판매</li>
           <li className="item">커뮤니티</li>
-          <li className="item">프로모션</li>
+          <li
+            className="item"
+            onClick={() => {
+              navigate("/promotion");
+            }}
+          >
+            프로모션
+          </li>
           <li className="item">About</li>
         </ul>
       </div>
