@@ -1,0 +1,57 @@
+.loginpage {
+  max-width: 400px;
+  height: 800px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 auto;
+
+  > .logintitle {
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+  > .logininput {
+    width: 250px;
+    margin: 4px 0;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #eee;
+    &::placeholder {
+      font-weight: 700;
+      font-size: 14px;
+    }
+  }
+  .horizenbar {
+    margin: 20px 0;
+  }
+  .btnwrap {
+    width: 180px;
+    margin: 4px 0;
+    > p {
+      font-size: 14px;
+      text-align: center;
+      font-weight: 700;
+    }
+  }
+  .etcfunction {
+    display: flex;
+    margin: 10px 0;
+    > .findId {
+      cursor: pointer;
+      color: skyblue;
+      margin: 0 10px;
+    }
+    > .findPw {
+      cursor: pointer;
+      color: skyblue;
+      margin: 0 10px;
+    }
+    > .findAccount {
+      cursor: pointer;
+      font-weight: 500;
+      margin: 0 10px;
+    }
+  }
+}

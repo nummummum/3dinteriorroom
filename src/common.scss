@@ -1,10 +1,15 @@
 body {
   font-family: "Noto Sans KR", sans-serif;
   letter-spacing: -0.2px;
-
   .btnwrap {
     padding: 10px 30px;
     cursor: pointer;
+    &.radius10 {
+      border-radius: 10px;
+    }
+    &.radius25 {
+      border-radius: 25px;
+    }
     &.white {
       color: white;
       border: 3px solid white;
@@ -15,6 +20,22 @@ body {
       &.reverse {
         background-color: black;
         color: white;
+      }
+    }
+    &.blue {
+      color: rgb(64, 96, 255);
+      border: 3px solid rgb(64, 96, 255);
+      &.reverse {
+        background-color: rgb(64, 96, 255);
+        color: white;
+      }
+    }
+    &.yellow {
+      color: rgb(255, 255, 66);
+      border: 3px solid rgb(255, 255, 66);
+      &.reverse {
+        background-color: rgb(255, 255, 66);
+        color: black;
       }
     }
   }

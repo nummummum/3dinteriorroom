@@ -47,8 +47,22 @@ export default function Header() {
             </div>
             <p>마이페이지</p>
           </li>
-          <li className="item">로그인</li>
-          <li className="item">가입하기</li>
+          <li
+            className="item"
+            onClick={() => {
+              navigate("/login");
+            }}
+          >
+            로그인
+          </li>
+          <li
+            className="item"
+            onClick={() => {
+              navigate("/account");
+            }}
+          >
+            가입하기
+          </li>
           <li className="item">Interior</li>
         </ul>
       </div>
