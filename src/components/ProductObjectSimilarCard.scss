@@ -1,0 +1,33 @@
+.objectsimilarcardwrap {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  width: 200px;
+  height: 260px;
+  background-color: #eee;
+  > img {
+    width: 200px;
+    height: 200px;
+  }
+  > .title {
+    font-size: 14px;
+    margin: 10px 0;
+  }
+  > .price {
+    font-size: 14px;
+  }
+  > .functioonwrap {
+    > .cartfunction {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background-color: cornflowerblue;
+    }
+    > .heartfunction {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background-color: crimson;
+    }
+  }
+}

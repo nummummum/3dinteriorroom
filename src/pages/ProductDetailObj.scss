@@ -1,0 +1,115 @@
+.detailobjpage {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  > .objdivision {
+    color: #aaa;
+  }
+  > .detailproductwrap {
+    display: flex;
+    position: relative;
+    > .detailimgwrap {
+      border: 1px solid #b2b2b2;
+      margin-right: 340px;
+      > .detailimg {
+        width: 400px;
+        height: 400px;
+      }
+    }
+    > .detailcontentwrap {
+      width: 300px;
+      border: 1px solid #b2b2b2;
+      padding: 20px;
+      > .detailtitle {
+        font-size: 18px;
+        font-weight: 500;
+      }
+      > .detailcontent {
+        margin: 10px 0;
+      }
+      .detailcolorwrap {
+        ul {
+          display: flex;
+          .colorround {
+            position: relative;
+            display: block;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            margin: 5px;
+            &.black {
+              background-color: black;
+            }
+            &.blue {
+              background-color: blue;
+            }
+            &.orange {
+              background-color: orange;
+            }
+            &.red {
+              background-color: red;
+            }
+            &.white {
+              background-color: #eee;
+            }
+          }
+        }
+      }
+      > .accountnumberwrap {
+        width: fit-content;
+        margin: 20px auto;
+        display: flex;
+        border: 1px solid #b2b2b2;
+        padding: 10px 20px;
+
+        > p {
+          margin: 0 10px;
+        }
+      }
+    }
+
+    .detailbtnwrap {
+      display: flex;
+      > .btnwrap {
+        margin: 10px;
+        p {
+        }
+      }
+    }
+  }
+  .horizenbar {
+  }
+  .similartitle {
+  }
+  .similarobjectwrap {
+    display: flex;
+    position: relative;
+    li {
+      margin: 10px;
+    }
+  }
+  .reviewtitle {
+  }
+  > .reviewul {
+    li {
+      .reviewwrap {
+        > img {
+        }
+        > .reviewfield {
+          .reviewrating {
+          }
+          .reviewnamewrap {
+            .reviewname {
+            }
+            .reviewdate {
+            }
+          }
+          .reviewcontent {
+          }
+        }
+      }
+    }
+  }
+}

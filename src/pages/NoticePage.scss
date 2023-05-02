@@ -21,20 +21,4 @@
       margin: 20px;
     }
   }
-  .numberbarwrap {
-    margin: 40px 0;
-    > .numberbar {
-      display: flex;
-      li {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 30px;
-        height: 30px;
-        color: white;
-        background-color: black;
-        margin: 5px;
-      }
-    }
-  }
 }

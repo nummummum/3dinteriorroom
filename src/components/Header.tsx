@@ -20,7 +20,22 @@ export default function Header() {
           S3IR
         </h1>
         <ul className="left_menu_wrap">
-          <li className="item">상품 판매</li>
+          <li
+            className="item"
+            onClick={() => {
+              navigate("/product");
+            }}
+          >
+            상품 판매
+          </li>
+          <li
+            className="item"
+            onClick={() => {
+              navigate("/showroom");
+            }}
+          >
+            쇼룸
+          </li>
           <li className="item">커뮤니티</li>
           <li
             className="item"
