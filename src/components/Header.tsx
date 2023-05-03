@@ -50,7 +50,12 @@ export default function Header() {
       </div>
       <div className="header_right">
         <ul className="right_menu_wrap">
-          <li className="item">
+          <li
+            className="item"
+            onClick={() => {
+              navigate("/cart");
+            }}
+          >
             <div className="icon">
               <img src="" alt="" />
             </div>
@@ -60,7 +65,13 @@ export default function Header() {
             <div className="icon">
               <img src="" alt="" />
             </div>
-            <p>마이페이지</p>
+            <p
+              onClick={() => {
+                navigate("/mypage");
+              }}
+            >
+              마이페이지
+            </p>
           </li>
           <li
             className="item"

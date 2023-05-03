@@ -1,3 +1,4 @@
+import ProductRoomSimilarCard from "../components/ProductRoomSimilarCard";
 import "./ProductDetailRoom.scss";
 
 export default function ProductDetailRoom() {
@@ -35,19 +36,19 @@ export default function ProductDetailRoom() {
         <h5 className="similartitle">비슷한 제품</h5>
         <ul className="similarobjectwrap">
           <li>
-            <ProductDetailRoom />
+            <ProductRoomSimilarCard />
           </li>
           <li>
-            <ProductDetailRoom />
+            <ProductRoomSimilarCard />
           </li>
           <li>
-            <ProductDetailRoom />
+            <ProductRoomSimilarCard />
           </li>
           <li>
-            <ProductDetailRoom />
+            <ProductRoomSimilarCard />
           </li>
           <li>
-            <ProductDetailRoom />
+            <ProductRoomSimilarCard />
           </li>
         </ul>
         <div className="horizenbar" />

@@ -11,6 +11,8 @@ import ProductObjectPage from "./pages/ProductObjectPage";
 import ProductRoomPage from "./pages/ProductRoomPage";
 import ProductDetailObj from "./pages/ProductDetailObj";
 import ProductDetailRoom from "./pages/ProductDetailRoom";
+import CartPage from "./pages/CartPage";
+import MyPage from "./pages/MyPage";
 
 function App() {
   return (
@@ -25,6 +27,8 @@ function App() {
         <Route path="/promotion" element={<NoticePage />}></Route>
         <Route path="/login" element={<LoginPage />}></Route>
         <Route path="/account" element={<AccountPage />}></Route>
+        <Route path="/cart" element={<CartPage />}></Route>
+        <Route path="/mypage" element={<MyPage />}></Route>
       </Routes>
       <Footer />
     </BrowserRouter>
