@@ -1,0 +1,98 @@
+.cartpage {
+  position: relative;
+  .inner {
+    height: 800px;
+    .pagetitle {
+      display: block;
+      position: relative;
+      font-size: 22px;
+      margin-top: 40px;
+      font-weight: 500;
+      width: inherit;
+    }
+    > .cartwrapform {
+      > li {
+        display: flex;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        margin: 10px 0;
+        .cartcheck {
+          display: block;
+          position: relative;
+          width: 0;
+          height: 0;
+          margin-right: 50px;
+        }
+        .cartimg {
+          display: block;
+          position: relative;
+          width: 0;
+          height: 0;
+          margin-right: 210px;
+        }
+        .carttitle {
+          margin-right: 200px;
+        }
+        .cartprice {
+          margin-right: 200px;
+        }
+        .accountnumberwrap {
+          display: flex;
+          > p {
+            margin: 0 10px;
+          }
+        }
+      }
+    }
+    > .cartwrap {
+      > li {
+        display: flex;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        border: 1px solid #b2b2b2;
+        margin: 20px 0;
+        .cartcheck {
+          display: block;
+          position: relative;
+          width: 32px;
+          height: 32px;
+          margin-right: 20px;
+        }
+        .cartimg {
+          display: block;
+          position: relative;
+          width: 100px;
+          height: 100px;
+          margin-right: 100px;
+        }
+        .carttitle {
+          margin-right: 200px;
+        }
+        .cartprice {
+          margin-right: 200px;
+        }
+        .accountnumberwrap {
+          display: flex;
+          > p {
+            margin: 10px;
+          }
+        }
+      }
+    }
+    > .btngroupwrap {
+      display: flex;
+      margin: 10px 20px;
+      > .btnwrap {
+        margin: 0 10px;
+        &.black {
+        }
+        > p {
+        }
+      }
+    }
+  }
+}
