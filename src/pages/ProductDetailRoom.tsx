@@ -1,6 +1,6 @@
-import ProductObjectSimilarCard from "../components/ProductObjectSimilarCard";
-import "./ProductDetailObj.scss";
-export default function ProductDetailObj() {
+import "./ProductDetailRoom.scss";
+
+export default function ProductDetailRoom() {
   return (
     <section className="detailobjpage">
       <div className="inner">
@@ -16,16 +16,6 @@ export default function ProductDetailObj() {
             <p className="detailcontent">12300원</p>
             <h5 className="detailtitle">평점 4.3 (리뷰 수)</h5>
             <p className="detailcontent">4.3</p>
-            <h5 className="detailtitle">색깔</h5>
-            <div className="detailcolorwrap">
-              <ul>
-                <li className="colorround black" />
-                <li className="colorround blue" />
-                <li className="colorround orange" />
-                <li className="colorround red" />
-                <li className="colorround white" />
-              </ul>
-            </div>
             <div className="accountnumberwrap">
               <p>-</p>
               <p>1</p>
@@ -45,19 +35,19 @@ export default function ProductDetailObj() {
         <h5 className="similartitle">비슷한 제품</h5>
         <ul className="similarobjectwrap">
           <li>
-            <ProductObjectSimilarCard />
+            <ProductDetailRoom />
           </li>
           <li>
-            <ProductObjectSimilarCard />
+            <ProductDetailRoom />
           </li>
           <li>
-            <ProductObjectSimilarCard />
+            <ProductDetailRoom />
           </li>
           <li>
-            <ProductObjectSimilarCard />
+            <ProductDetailRoom />
           </li>
           <li>
-            <ProductObjectSimilarCard />
+            <ProductDetailRoom />
           </li>
         </ul>
         <div className="horizenbar" />

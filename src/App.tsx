@@ -10,6 +10,7 @@ import Footer from "./components/Footer";
 import ProductObjectPage from "./pages/ProductObjectPage";
 import ProductRoomPage from "./pages/ProductRoomPage";
 import ProductDetailObj from "./pages/ProductDetailObj";
+import ProductDetailRoom from "./pages/ProductDetailRoom";
 
 function App() {
   return (
@@ -20,7 +21,7 @@ function App() {
         <Route path="/product" element={<ProductObjectPage />}></Route>
         <Route path="/product/detail" element={<ProductDetailObj />}></Route>
         <Route path="/showroom" element={<ProductRoomPage />}></Route>
-        <Route path="/showroom/detail" element={<ProductDetailObj />}></Route>
+        <Route path="/showroom/detail" element={<ProductDetailRoom />}></Route>
         <Route path="/promotion" element={<NoticePage />}></Route>
         <Route path="/login" element={<LoginPage />}></Route>
         <Route path="/account" element={<AccountPage />}></Route>
