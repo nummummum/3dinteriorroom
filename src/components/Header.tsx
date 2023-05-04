@@ -36,7 +36,14 @@ export default function Header() {
           >
             쇼룸
           </li>
-          <li className="item">커뮤니티</li>
+          <li
+            className="item"
+            onClick={() => {
+              navigate("/community");
+            }}
+          >
+            커뮤니티
+          </li>
           <li
             className="item"
             onClick={() => {
@@ -89,7 +96,14 @@ export default function Header() {
           >
             가입하기
           </li>
-          <li className="item">Interior</li>
+          <li
+            className="item"
+            onClick={() => {
+              navigate("/interior");
+            }}
+          >
+            Interior
+          </li>
         </ul>
       </div>
     </section>

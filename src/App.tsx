@@ -13,6 +13,8 @@ import ProductDetailObj from "./pages/ProductDetailObj";
 import ProductDetailRoom from "./pages/ProductDetailRoom";
 import CartPage from "./pages/CartPage";
 import MyPage from "./pages/MyPage";
+import InteriorPage from "./pages/InteriorPage";
+import CommunityPage from "./pages/CommunityPage";
 
 function App() {
   return (
@@ -29,6 +31,8 @@ function App() {
         <Route path="/account" element={<AccountPage />}></Route>
         <Route path="/cart" element={<CartPage />}></Route>
         <Route path="/mypage" element={<MyPage />}></Route>
+        <Route path="/community" element={<CommunityPage />}></Route>
+        <Route path="/interior" element={<InteriorPage />}></Route>
       </Routes>
       <Footer />
     </BrowserRouter>

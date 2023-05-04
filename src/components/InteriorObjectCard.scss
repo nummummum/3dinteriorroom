@@ -1,0 +1,19 @@
+.interiorobjectcard {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  width: 200px;
+  height: 260px;
+  background-color: #eee;
+  > img {
+    width: 200px;
+    height: 200px;
+  }
+  > .title {
+    font-size: 14px;
+    margin: 10px 0;
+  }
+  > .price {
+    font-size: 14px;
+  }
+}
