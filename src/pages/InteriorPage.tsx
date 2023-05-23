@@ -1,4 +1,5 @@
 import InteriorObjectCard from "../components/InteriorObjectCard";
+import "./InteriorPage.scss";
 
 export default function InteriorPage() {
   return (

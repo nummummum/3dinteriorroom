@@ -1,19 +1,26 @@
-.interiorobjectcard {
+.interiorobjectcardwrap {
   display: flex;
   position: relative;
   flex-direction: column;
   width: 200px;
   height: 260px;
   background-color: #eee;
+  justify-content: center;
+  align-items: center;
   > img {
-    width: 200px;
-    height: 200px;
+    width: 180px;
+    height: 180px;
   }
   > .title {
     font-size: 14px;
     margin: 10px 0;
   }
   > .price {
+    position: absolute;
+    bottom: 0;
+    right: 20px;
+    color: #444;
+    font-weight: 400;
     font-size: 14px;
   }
 }

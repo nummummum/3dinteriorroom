@@ -1,0 +1,50 @@
+.interiorpage {
+  display: block;
+  position: relative;
+  .inner {
+    > .canvas {
+      display: block;
+      position: relative;
+      bottom: 0;
+    }
+    > .bottom_bar {
+      display: block;
+      position: fixed;
+      width: 1000px;
+      bottom: 0;
+      left: 100px;
+      border: 1px solid #bbb;
+      z-index: 1;
+      .bartitle {
+      }
+      .bartitleinput {
+      }
+      .btnlight {
+      }
+      .btnroomlight {
+      }
+      .btnwrap {
+        &.navy {
+          &.reverse {
+          }
+        }
+        > p {
+        }
+      }
+    }
+    .interiormunubar {
+      > li {
+        .btnwrap {
+          &.black {
+          }
+          &.radius25 {
+          }
+        }
+      }
+    }
+    .interiorobject {
+      > .li {
+      }
+    }
+  }
+}
