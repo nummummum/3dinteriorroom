@@ -118,17 +118,17 @@ export default function CommunityPage() {
             </li>
           </ul>
         </div>
-      </div>
-      <div className="numberbarwrap">
-        <ul className="numberbar">
-          <li>이전</li>
-          <li>1</li>
-          <li>2</li>
-          <li>3</li>
-          <li>4</li>
-          <li>5</li>
-          <li>다음</li>
-        </ul>
+        <div className="numberbarwrap">
+          <ul className="numberbar">
+            <li>이전</li>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+            <li>다음</li>
+          </ul>
+        </div>
       </div>
     </section>
   );

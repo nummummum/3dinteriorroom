@@ -1,46 +1,88 @@
 .communitypage {
   display: block;
   position: relative;
+
   height: 1100px;
   .inner {
     .community_title {
+      width: 1000px;
+      font-weight: 700;
+      font-size: 20px;
+      margin: 30px;
     }
     .popular_post_wrap {
+      display: flex;
+      border: 1px solid #bbb;
+      padding: 10px;
+      color: #bbb;
+      font-size: 18px;
+      height: 280px;
       > ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10px;
+
         > li {
+          width: 220px;
+          height: 220px;
           > img {
+            width: 200px;
+            height: 200px;
           }
           > p {
+            font-size: 16px;
+            color: #000;
           }
         }
       }
     }
     .post_wrap {
+      display: block;
+      position: relative;
+      width: 800px;
+      border: 1px solid #bbb;
+      margin-top: 40px;
+      padding: 10px;
       > ul {
         > li {
+          display: flex;
+          justify-content: center;
+          align-items: center;
           .post_account,
           .post_author,
           .post_number,
           .post_recom,
           .post_search,
           .post_title {
+            text-align: center;
+            margin: 14px 0;
           }
           .post_number {
+            width: 100px;
           }
           .post_title {
+            width: 400px;
           }
           .post_author {
+            width: 100px;
           }
           .post_account {
+            width: 100px;
           }
           .post_search {
+            width: 50px;
           }
           .post_recom {
+            width: 50px;
           }
         }
       }
     }
     .numberbarwrap {
+      margin: 40px 0;
+      .numberbar {
+      }
     }
   }
 }
