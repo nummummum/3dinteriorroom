@@ -1,0 +1,46 @@
+.communitypage {
+  display: block;
+  position: relative;
+  height: 1100px;
+  .inner {
+    .community_title {
+    }
+    .popular_post_wrap {
+      > ul {
+        > li {
+          > img {
+          }
+          > p {
+          }
+        }
+      }
+    }
+    .post_wrap {
+      > ul {
+        > li {
+          .post_account,
+          .post_author,
+          .post_number,
+          .post_recom,
+          .post_search,
+          .post_title {
+          }
+          .post_number {
+          }
+          .post_title {
+          }
+          .post_author {
+          }
+          .post_account {
+          }
+          .post_search {
+          }
+          .post_recom {
+          }
+        }
+      }
+    }
+    .numberbarwrap {
+    }
+  }
+}

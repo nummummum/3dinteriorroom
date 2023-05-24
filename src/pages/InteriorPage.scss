@@ -1,49 +1,95 @@
 .interiorpage {
   display: block;
   position: relative;
+  height: 1000px;
   .inner {
     > .canvas {
       display: block;
-      position: relative;
-      bottom: 0;
+      position: absolute;
+      top: 250px;
+      left: 120px;
+      width: 500px;
+      height: 500px;
+      border: 1px solid #bbb;
     }
     > .bottom_bar {
       display: block;
       position: fixed;
       width: 1000px;
-      bottom: 0;
-      left: 100px;
+      bottom: 40px;
+      left: 20%;
       border: 1px solid #bbb;
+      background-color: #fff;
+      border-radius: 10px;
       z-index: 1;
-      .bartitle {
-      }
-      .bartitleinput {
-      }
-      .btnlight {
-      }
-      .btnroomlight {
-      }
-      .btnwrap {
-        &.navy {
-          &.reverse {
+      > ul {
+        position: relative;
+        display: flex;
+        align-items: center;
+
+        > li {
+          .bartitle {
+            margin-left: 60px;
           }
-        }
-        > p {
+          .bartitleinput {
+            width: 300px;
+            height: 30px;
+            margin: 0 40px;
+          }
+          .btnlight,
+          .btnroomlight {
+            position: relative;
+            display: flex;
+            border-radius: 50%;
+            border: 1px solid #bbb;
+            height: 32px;
+            width: 32px;
+            align-items: center;
+            margin: 0 10px;
+          }
+          .btnlight {
+          }
+          .btnroomlight {
+          }
+          .btnwrap {
+            margin: 10px 0;
+            > p {
+            }
+          }
         }
       }
     }
-    .interiormunubar {
-      > li {
-        .btnwrap {
-          &.black {
-          }
-          &.radius25 {
+    .interiormenuwrap {
+      display: block;
+      position: absolute;
+      border: 1px solid #bbb;
+      width: 800px;
+      margin: 30px;
+      right: 0;
+      top: 0;
+      .interiormenubar {
+        display: block;
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        > li {
+          display: block;
+          position: relative;
+          width: 140px;
+          margin: 10px;
+          .btnwrap {
+            &.black {
+            }
+            &.radius25 {
+            }
           }
         }
       }
-    }
-    .interiorobject {
-      > .li {
+      .interiorobject {
+        display: flex;
+        flex-wrap: wrap;
+        > .li {
+        }
       }
     }
   }

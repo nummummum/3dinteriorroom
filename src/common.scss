@@ -39,6 +39,14 @@ body {
         color: white;
       }
     }
+    &.navy {
+      color: rgb(34, 54, 156);
+      border: 3px solid rgb(34, 54, 156);
+      &.reverse {
+        background-color: rgb(34, 54, 156);
+        color: white;
+      }
+    }
     &.yellow {
       color: rgb(255, 255, 66);
       border: 3px solid rgb(255, 255, 66);

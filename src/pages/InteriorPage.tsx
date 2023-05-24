@@ -8,20 +8,31 @@ export default function InteriorPage() {
         <div className="canvas"></div>
 
         <div className="bottom_bar">
-          <p className="bartitle">방 제목</p>
-          <input
-            className="bartitleinput"
-            type="text"
-            placeholder="저장할 방 이름을 입력해주세요."
-          />
-          <div className="btnlight">조명</div>
-          <div className="btnroomlight">밝기</div>
-          <div className="btnwrap navy reverse">
-            <p>적용하기</p>
-          </div>
+          <ul>
+            <li>
+              <p className="bartitle">방 제목</p>
+            </li>
+            <li>
+              <input
+                className="bartitleinput"
+                type="text"
+                placeholder="저장할 방 이름을 입력해주세요."
+              />
+            </li>
+            <li>
+              <div className="btnlight">조명</div>
+            </li>
+            <li>
+              <div className="btnroomlight">밝기</div>
+            </li>
+            <li>
+              <div className="btnwrap navy reverse radius25">
+                <p>적용하기</p>
+              </div>
+            </li>
+          </ul>
         </div>
-
-        <div>
+        <div className="interiormenuwrap">
           <ul className="interiormenubar">
             <li>
               <div className="btnwrap black radius25">
