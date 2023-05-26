@@ -1,4 +1,4 @@
-import { Layout, Menu, RadioChangeEvent } from "antd";
+import { Button, Layout, Menu, RadioChangeEvent } from "antd";
 import {
   UploadOutlined,
   UserOutlined,
@@ -64,7 +64,6 @@ export default function MyPage() {
             />
           </Sider>
           <Layout className="state_modify_content" ref={stateModifyRef}>
-            <Header />
             <Content>
               <section className="mainpage_modify">
                 <h4 className="modify_title">나의 정보</h4>
@@ -102,6 +101,7 @@ export default function MyPage() {
                       <li>
                         <p>휴대전화</p>
                         <input type="text" />
+                        <button>인증요청</button>
                       </li>
                     </ul>
                   </div>
@@ -113,7 +113,6 @@ export default function MyPage() {
             </Content>
           </Layout>
           <Layout className="mypage_main_content" ref={mypageMainRef}>
-            <Header />
             <Content>
               <div className="mainpage_main">
                 <div className="main_profile_wrap">
@@ -144,7 +143,7 @@ export default function MyPage() {
                 </div>
                 <div className="point_wrap">
                   <img src="" alt="" className="point_img" />
-                  <p className="poing_txt">포인트</p>
+                  <p className="point_txt">포인트</p>
                 </div>
                 <div className="timeline">
                   <p className="timeline_title">유저 활동 타임라인</p>
@@ -171,26 +170,25 @@ export default function MyPage() {
             </Content>
           </Layout>
           <Layout className="buy_receipt_content" ref={buyReceiptRef}>
-            <Header />
             <Content>
               <section className="mainpage_buyreceipt">
-                <p className="buyreceipt_title">구매 내역</p>
+                <p className="mypage_main_title">구매 내역</p>
                 <div className="duration_wrap">
                   <ul className="duration_top_ul">
                     <li className="duration">
-                      <button className="duration_btn">1주일</button>
+                      <Button className="duration_btn">1주일</Button>
                     </li>
                     <li className="duration">
-                      <button className="duration_btn">1개월</button>
+                      <Button className="duration_btn">1개월</Button>
                     </li>
                     <li className="duration">
-                      <button className="duration_btn">3개월</button>
+                      <Button className="duration_btn">3개월</Button>
                     </li>
                     <li className="duration">
-                      <button className="duration_btn">6개월</button>
+                      <Button className="duration_btn">6개월</Button>
                     </li>
                     <li className="duration">
-                      <button className="duration_btn">기간 설정</button>
+                      <Button className="duration_btn">기간 설정</Button>
                     </li>
                   </ul>
                   <ul className="duration_bottom_ul">
@@ -214,16 +212,63 @@ export default function MyPage() {
                       <input className="time_input" type="date" />
                     </li>
                   </ul>
-                  <div className="btnwrap black reverse radius15">조회</div>
+                  <div className="btnwrap black reverse radius10">조회</div>
                 </div>
-                <p className="receipt_title">구매 목록</p>
-                <ul>
+                <p className="mypage_sub_title">구매 목록</p>
+                <ul className="receipt_wrap">
+                  <li>
+                    <img className="receipt_img" src="" alt="" />
+                    <div className="receip_content_wrap">
+                      <p className="receipt_name">
+                        이곳은 제목을 입력하는 곳입니다.
+                      </p>
+                      <p className="receipt_margin" />
+                      <p className="receipt_price_amount">6,500원 1개</p>
+                    </div>
+                    <p className="receipt_total">6,500원</p>
+                    <Button className="receipt_review">후기 작성</Button>
+                  </li>
+                </ul>
+              </section>
+            </Content>
+          </Layout>
+          <Layout className="review_content" ref={reviewRef}>
+            <Content>
+              <section className="mainpage_review">
+                <p className="mypage_main_title">상품후기</p>
+                <div className="review_wrap">
+                  <div className="receipt_first">
+                    <img className="receipt_img" src="" alt="" />
+                    <div className="receip_content_wrap">
+                      <p className="receipt_name">상품</p>
+                      <p className="receipt_price_amount" />
+                    </div>
+                    <p className="receipt_total">작성기간</p>
+                    <p className="receipt_review">후기 작성</p>
+                  </div>
+                  <ul className="review_receipt">
+                    <li className="receipt_wrap">
+                      <img className="receipt_img" src="" alt="" />
+                      <div className="receip_content_wrap">
+                        <p className="receipt_name">
+                          이곳은 제목을 입력하는 곳입니다.
+                        </p>
+                        <p className="receipt_price_amount">6,500원 1개</p>
+                      </div>
+                      <p className="receipt_total">6,500원</p>
+                      <button className="receipt_review">후기 작성</button>
+                    </li>
+                  </ul>
+                </div>
+                <p className="mypage_sub_title">작성 후기</p>
+                <ul className="review_receipt">
                   <li className="receipt_wrap">
                     <img className="receipt_img" src="" alt="" />
                     <div className="receip_content_wrap">
                       <p className="receipt_name">
                         이곳은 제목을 입력하는 곳입니다.
                       </p>
+                      <p className="recipt_margin"></p>
                       <p className="receipt_price_amount">6,500원 1개</p>
                     </div>
                     <p className="receipt_total">6,500원</p>
@@ -233,28 +278,88 @@ export default function MyPage() {
               </section>
             </Content>
           </Layout>
-          <Layout className="review_content" ref={reviewRef}>
-            <Header />
-            <Content>
-              <div>content3</div>
-            </Content>
-          </Layout>
           <Layout className="interior_content" ref={interiorRef}>
-            <Header />
             <Content>
-              <div>content4</div>
+              <section className="mainpage_interior">
+                <p className="mypage_main_title">인테리어한 방</p>
+                <div className="horizen_bar" />
+                <div className="interior_wrap">
+                  <ul>
+                    <li className="interior_list">
+                      <img className="interior_thumb" src="" alt="" />
+                      <p className="interior_title">내가 꾸민 방이름 1</p>
+                    </li>
+                    <li className="interior_list">
+                      <img className="interior_thumb" src="" alt="" />
+                      <p className="interior_title">내가 꾸민 방이름 1</p>
+                    </li>
+                    <li className="interior_list">
+                      <img className="interior_thumb" src="" alt="" />
+                      <p className="interior_title">내가 꾸민 방이름 1</p>
+                    </li>
+                  </ul>
+                </div>
+                <div className="horizen_bar" />
+                <p className="mypage_sub_title">내가 가진 물건</p>
+                <div className="interior_wrap">
+                  <ul>
+                    <li className="mypage_furniture">
+                      <img className="furniture_thumb" src="" alt="" />
+                      <p className="furniture_name">의자</p>
+                      <p className="furniture_amount">3</p>
+                    </li>
+                    <li className="mypage_furniture">
+                      <img className="furniture_thumb" src="" alt="" />
+                      <p className="furniture_name">의자</p>
+                      <p className="furniture_amount">3</p>
+                    </li>
+                    <li className="mypage_furniture">
+                      <img className="furniture_thumb" src="" alt="" />
+                      <p className="furniture_name">의자</p>
+                      <p className="furniture_amount">3</p>
+                    </li>
+                  </ul>
+                </div>
+              </section>
             </Content>
           </Layout>
           <Layout className="bill_content" ref={billRef}>
-            <Header />
             <Content>
-              <div>content5</div>
+              <section className="mainpage_bill">
+                <p className="mypage_main_title">결재 내역</p>
+                <div className="horizen_bar" />
+                <div className="bill_wrap">
+                  <ul>
+                    <li className="bill_first">
+                      <p className="bill_date">결제일</p>
+                      <p className="bill_name">주문 내역</p>
+                      <p className="bill_price">금액</p>
+                    </li>
+                    <li className="bill_list">
+                      <p className="bill_date">2023-04-28</p>
+                      <p className="bill_name">의자의자의자1</p>
+                      <p className="bill_price">1000 C</p>
+                      <div className="horizen_bar" />
+                    </li>
+                  </ul>
+                </div>
+              </section>
             </Content>
           </Layout>
           <Layout className="fire_state_content" ref={fireStateRef}>
             <Header />
             <Content>
-              <div>content6</div>
+              <section className="mainpage_fire">
+                <p className="mypage_main_title">회원탈퇴하기</p>
+                <div className="horizen_bar" />
+                <div className="fire_password">
+                  <p>비밀번호 변경</p>
+                  <input type="password" />
+                </div>
+                <div className="btnwrap black reverse radius15">
+                  <p>회원 탈퇴하기</p>
+                </div>
+              </section>
             </Content>
           </Layout>
         </Layout>

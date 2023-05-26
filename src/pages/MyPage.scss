@@ -22,6 +22,367 @@
       font-size: 18px;
       margin: 10px 0;
     }
+    .mypage_main_title {
+      font-size: 24px;
+      font-weight: 500;
+      margin: 20px 0;
+    }
+    .mypage_sub_title {
+      font-size: 20px;
+      font-weight: 500;
+      margin: 20px 0;
+    }
+
+    .state_modify_content,
+    .mypage_main_content,
+    .buy_receipt_content,
+    .review_content,
+    .interior_content,
+    .bill_content,
+    .fire_state_content {
+      padding: 40px;
+      background-color: #fff;
+      border: 1px solid #bbb;
+    }
+
+    //각 항목 회원 정보 수정
+    .state_modify_content {
+      .mainpage_modify {
+        .modify_title {
+          font-size: 26px;
+          font-weight: 600;
+          margin: 30px 0;
+        }
+        .modify_little_title {
+          font-size: 22px;
+        }
+        .modify_content_wrap {
+          position: relative;
+          display: flex;
+          margin: 20px;
+          .modify_content_profile {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .profile_img {
+            }
+            .btnwrap {
+              width: 140px;
+              padding: 10px 10px;
+              text-align: center;
+            }
+          }
+          .modify_content_modify {
+            > ul {
+              > li {
+                display: flex;
+                align-items: center;
+                margin: 20px 0 20px 40px;
+                > p {
+                  display: block;
+                  width: 100px;
+                  font-size: 16px;
+                }
+                > input {
+                  width: 180px;
+                  height: 40px;
+                  border: 1px solid #bbb;
+                  border-radius: 10px;
+                  margin-left: 40px;
+                  padding-left: 10px;
+                }
+                > button {
+                  height: 40px;
+                  color: #444;
+                  font-weight: 600;
+                  border: 1px solid #bbb;
+                  border-radius: 10px;
+                  margin-left: 10px;
+                  padding: 10px 14px;
+                  background-color: #fff;
+                }
+              }
+            }
+          }
+        }
+        > .btnwrap {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          position: absolute;
+          width: 100px;
+          right: 40px;
+          bottom: 20px;
+          padding: 6px 10px;
+        }
+      }
+    }
+    //각 항목 회원 정보 수정
+    .mainpage_main {
+      .main_profile_wrap {
+        border: 1px solid #bbb;
+        border-radius: 20px;
+        padding: 20px;
+        .profile_title {
+          font-size: 22px;
+        }
+        .card_component_wrap {
+          display: flex;
+          position: relative;
+          flex-wrap: wrap;
+          justify-content: end;
+          .card_component_list {
+            display: flex;
+            position: relative;
+            justify-content: end;
+            align-items: center;
+            margin: 20px;
+            width: 40%;
+            &:nth-child(1) {
+              width: 80%;
+            }
+            .component_icon {
+              background-color: skyblue;
+              width: 50px;
+              height: 50px;
+              border-radius: 10px;
+              margin: 0 10px;
+            }
+            .component_p {
+              display: block;
+              position: relative;
+              width: 140px;
+              text-align: end;
+              font-size: 16px;
+              .component_number {
+                margin: 4px 0;
+              }
+              .component_title {
+                margin: 4px 0;
+              }
+            }
+          }
+        }
+      }
+      .point_wrap {
+        display: flex;
+        position: relative;
+        width: 300px;
+        margin: 30px 0;
+        align-items: center;
+        border-bottom: 1px solid #bbb;
+        .point_img {
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          margin: 4px 0;
+        }
+        .point_txt {
+          display: block;
+          position: absolute;
+          right: 0;
+        }
+      }
+      .timeline {
+        border: 1px solid #bbb;
+        border-radius: 20px;
+        padding: 20px;
+        .timeline_title {
+          font-size: 22px;
+        }
+        .content_wrap {
+          display: flex;
+          align-items: center;
+          margin: 30px 0;
+          .icon {
+            position: relative;
+            display: block;
+            width: 16px;
+            height: 16px;
+            margin-left: 4px;
+            margin-right: 18px;
+            border-radius: 50%;
+            &.red {
+              background-color: rgb(242, 106, 134);
+            }
+            &.blue {
+              background-color: skyblue;
+            }
+            &::after {
+              content: "";
+              display: block;
+              position: relative;
+              height: 20px;
+              width: 0px;
+              border: 1px solid #bbb;
+              transform: translate(7px, 20px);
+            }
+
+            .timeline_content {
+            }
+          }
+        }
+      }
+    }
+    //각 항목 회원 정보 수정
+    .mainpage_buyreceipt {
+      .duration_wrap {
+        display: block;
+        position: relative;
+        border: 1px solid #bbb;
+        height: 200px;
+        .duration_top_ul {
+          display: flex;
+          > .duration {
+            margin: 20px 10px;
+            > .duration_btn {
+              width: 140px;
+              height: 40px;
+            }
+          }
+        }
+        .duration_bottom_ul {
+          display: flex;
+          > .time {
+            margin: 10px 0 10px 10px;
+            > .time_input {
+              width: 80px;
+              height: 30px;
+            }
+          }
+        }
+        .btnwrap {
+          position: absolute;
+          display: block;
+          width: 100px;
+          height: 40px;
+          right: 20px;
+          bottom: 10px;
+        }
+      }
+      .receipt_wrap {
+        border: 1px solid #bbb;
+        padding: 20px;
+        > li {
+          display: flex;
+          align-items: center;
+          .receipt_img {
+            width: 80px;
+            height: 80px;
+          }
+          .receip_content_wrap {
+            width: 400px;
+            margin-left: 20px;
+            .receipt_margin {
+              margin: 20px 0;
+            }
+            .receipt_name {
+            }
+            .receipt_price_amount {
+            }
+          }
+          .receipt_total {
+            width: 180px;
+            font-size: 16px;
+            font-weight: 600;
+          }
+          .receipt_review {
+          }
+        }
+      }
+    }
+    //각 항목 리뷰
+    .mainpage_review {
+      .review_wrap {
+        .receipt_first {
+          display: flex;
+          border: 1px solid #bbb;
+          background-color: #ddd;
+          height: 40px;
+          > .receipt_img {
+          }
+          > .receip_content_wrap {
+            > .receipt_name {
+            }
+            > .receipt_price_amount {
+            }
+          }
+          > .receipt_total {
+          }
+          > .receipt_review {
+          }
+        }
+        .review_receipt {
+          .receipt_wrap {
+            > .receipt_img {
+            }
+            > .receip_content_wrap {
+              > .receipt_name {
+              }
+              > .receipt_price_amount {
+              }
+            }
+            > .receipt_total {
+            }
+            > .receipt_review {
+            }
+          }
+        }
+      }
+    }
+    //각 항목 인테리어
+    .mainpage_interior {
+      .interior_wrap {
+        > ul {
+          > .interior_list {
+            .interior_thumb {
+            }
+            .interior_title {
+            }
+          }
+          > .mypage_furniture {
+            > .furniture_thumb {
+            }
+            > .furniture_name {
+            }
+            > .furniture_amount {
+            }
+          }
+        }
+      }
+    }
+    //각 항목 가격내역
+    .mainpage_bill {
+      .bill_wrap {
+        > ul {
+          .bill_first {
+            > .bill_date {
+            }
+            > .bill_name {
+            }
+            > .bill_price {
+            }
+          }
+          .bill_list {
+            > .bill_date {
+            }
+            > .bill_name {
+            }
+            > .bill_price {
+            }
+          }
+        }
+      }
+    }
+    //각 항목 회원탈퇴
+    .mainpage_fire {
+      .fire_password {
+        > p {
+        }
+        > input {
+        }
+      }
+    }
   }
 }
 
