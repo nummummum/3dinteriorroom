@@ -246,33 +246,34 @@ export default function MyPage() {
                     <p className="receipt_total">작성기간</p>
                     <p className="receipt_review">후기 작성</p>
                   </div>
-                  <ul className="review_receipt">
-                    <li className="receipt_wrap">
+                  <ul className="receipt_wrap">
+                    <li>
                       <img className="receipt_img" src="" alt="" />
                       <div className="receip_content_wrap">
                         <p className="receipt_name">
                           이곳은 제목을 입력하는 곳입니다.
                         </p>
+                        <p className="receipt_margin" />
                         <p className="receipt_price_amount">6,500원 1개</p>
                       </div>
-                      <p className="receipt_total">6,500원</p>
-                      <button className="receipt_review">후기 작성</button>
+                      <p className="receipt_total">2023-04-28 ~ 2023-04-29</p>
+                      <Button className="receipt_review">후기 작성</Button>
                     </li>
                   </ul>
                 </div>
                 <p className="mypage_sub_title">작성 후기</p>
-                <ul className="review_receipt">
-                  <li className="receipt_wrap">
+                <ul className="receipt_wrap">
+                  <li>
                     <img className="receipt_img" src="" alt="" />
                     <div className="receip_content_wrap">
                       <p className="receipt_name">
                         이곳은 제목을 입력하는 곳입니다.
                       </p>
-                      <p className="recipt_margin"></p>
+                      <p className="receipt_margin" />
                       <p className="receipt_price_amount">6,500원 1개</p>
                     </div>
                     <p className="receipt_total">6,500원</p>
-                    <button className="receipt_review">후기 작성</button>
+                    <Button className="receipt_review">후기 작성</Button>
                   </li>
                 </ul>
               </section>
@@ -339,8 +340,8 @@ export default function MyPage() {
                       <p className="bill_date">2023-04-28</p>
                       <p className="bill_name">의자의자의자1</p>
                       <p className="bill_price">1000 C</p>
-                      <div className="horizen_bar" />
                     </li>
+                    <div className="horizen_bar" />
                   </ul>
                 </div>
               </section>

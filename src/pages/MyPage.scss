@@ -261,20 +261,11 @@
         }
       }
       .receipt_wrap {
-        border: 1px solid #bbb;
-        padding: 20px;
         > li {
-          display: flex;
-          align-items: center;
           .receipt_img {
-            width: 80px;
-            height: 80px;
           }
           .receip_content_wrap {
-            width: 400px;
-            margin-left: 20px;
             .receipt_margin {
-              margin: 20px 0;
             }
             .receipt_name {
             }
@@ -282,9 +273,6 @@
             }
           }
           .receipt_total {
-            width: 180px;
-            font-size: 16px;
-            font-weight: 600;
           }
           .receipt_review {
           }
@@ -296,9 +284,27 @@
       .review_wrap {
         .receipt_first {
           display: flex;
+          align-items: center;
           border: 1px solid #bbb;
-          background-color: #ddd;
+          background-color: #eee;
           height: 40px;
+          > .receipt_img {
+            width: 200px;
+          }
+          > .receip_content_wrap {
+            width: 330px;
+            > .receipt_name {
+            }
+            > .receipt_price_amount {
+            }
+          }
+          > .receipt_total {
+            width: 190px;
+          }
+          > .receipt_review {
+          }
+        }
+        .receipt_wrap {
           > .receipt_img {
           }
           > .receip_content_wrap {
@@ -312,40 +318,50 @@
           > .receipt_review {
           }
         }
-        .review_receipt {
-          .receipt_wrap {
-            > .receipt_img {
-            }
-            > .receip_content_wrap {
-              > .receipt_name {
-              }
-              > .receipt_price_amount {
-              }
-            }
-            > .receipt_total {
-            }
-            > .receipt_review {
-            }
-          }
-        }
       }
     }
     //각 항목 인테리어
     .mainpage_interior {
       .interior_wrap {
         > ul {
+          display: flex;
           > .interior_list {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            margin: 10px 20px;
             .interior_thumb {
+              position: relative;
+              display: block;
+              width: 100px;
+              height: 100px;
             }
             .interior_title {
+              margin: 10px 0;
             }
           }
           > .mypage_furniture {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            margin: 10px 20px;
             > .furniture_thumb {
+              position: relative;
+              display: block;
+              width: 100px;
+              height: 100px;
             }
             > .furniture_name {
+              margin: 10px 0;
             }
             > .furniture_amount {
+              display: block;
+              position: absolute;
+              margin-bottom: -14px;
+              right: 0;
+              bottom: 0;
             }
           }
         }
@@ -354,21 +370,55 @@
     //각 항목 가격내역
     .mainpage_bill {
       .bill_wrap {
+        display: block;
+        position: relative;
         > ul {
           .bill_first {
+            display: flex;
+            align-items: center;
+            position: relative;
+            border: 1px solid #bbb;
+            background-color: #eee;
+            height: 50px;
             > .bill_date {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              width: 100px;
             }
             > .bill_name {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              width: 560px;
             }
             > .bill_price {
+              display: block;
+              position: absolute;
+              right: 40px;
             }
           }
           .bill_list {
+            display: flex;
+            align-items: center;
+            position: relative;
+            margin: 10px 0;
             > .bill_date {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              width: 100px;
             }
             > .bill_name {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              width: 560px;
             }
             > .bill_price {
+              display: block;
+              position: absolute;
+              right: 30px;
             }
           }
         }
@@ -376,12 +426,70 @@
     }
     //각 항목 회원탈퇴
     .mainpage_fire {
+      display: block;
+      position: relative;
+      height: 400px;
       .fire_password {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 80px 0;
         > p {
+          font-size: 16px;
         }
         > input {
+          border: 1px solid #bbb;
+          width: 300px;
+          border-radius: 10px;
+          height: 40px;
+          margin: 0 40px;
         }
       }
+      .btnwrap {
+        display: block;
+        position: absolute;
+        width: 120px;
+        padding: 10px;
+        right: 40px;
+        bottom: 0;
+        > p {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+    }
+  }
+}
+
+.receipt_wrap {
+  border: 1px solid #bbb;
+  padding: 20px;
+  > li {
+    display: flex;
+    align-items: center;
+    .receipt_img {
+      width: 80px;
+      height: 80px;
+    }
+    .receip_content_wrap {
+      width: 400px;
+      margin-left: 20px;
+      .receipt_margin {
+        margin: 20px 0;
+      }
+      .receipt_name {
+      }
+      .receipt_price_amount {
+      }
+    }
+    .receipt_total {
+      width: 100px;
+      margin-right: 80px;
+      font-size: 16px;
+      font-weight: 600;
+    }
+    .receipt_review {
     }
   }
 }
