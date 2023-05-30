@@ -1,12 +1,30 @@
 import { useNavigate } from "react-router-dom";
 import "./Header.scss";
+import { useRef, useState } from "react";
 
 export default function Header() {
+  const menubarRef = useRef<HTMLDivElement>(null);
+  const [menubarControlState, setMenubarControlState] =
+    useState<boolean>(false);
   const navigate = useNavigate();
   return (
     <section className="header">
       <div className="header_left">
-        <div className="menubar close">
+        <div className="menubar">
+          <ul className="menubar_wrap">
+            <li className="menubar_item">프로모션</li>
+            <li className="menubar_item">상품판매</li>
+            <li className="menubar_item">쇼룸</li>
+            <li className="menubar_item">커뮤니티</li>
+          </ul>
+        </div>
+        <div
+          className="menubartoggle"
+          ref={menubarRef}
+          onClick={() => {
+            openMenubar();
+          }}
+        >
           <span className="span_top"></span>
           <span className="span_middle"></span>
           <span className="span_bottom"></span>
@@ -108,4 +126,14 @@ export default function Header() {
       </div>
     </section>
   );
+
+  function openMenubar() {
+    if (menubarControlState == false) {
+      menubarRef.current!.className = "menubartoggle open";
+      setMenubarControlState(true);
+    } else if (menubarControlState == true) {
+      menubarRef.current!.className = "menubartoggle close";
+      setMenubarControlState(false);
+    }
+  }
 }
