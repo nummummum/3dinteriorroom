@@ -3,26 +3,19 @@ import "./Header.scss";
 import { useRef, useState } from "react";
 
 export default function Header() {
+  const toggleRef = useRef<HTMLDivElement>(null);
   const menubarRef = useRef<HTMLDivElement>(null);
-  const [menubarControlState, setMenubarControlState] =
-    useState<boolean>(false);
+  const [toggleControlState, setToggleControlState] = useState<boolean>(false);
+
   const navigate = useNavigate();
   return (
     <section className="header">
       <div className="header_left">
-        <div className="menubar">
-          <ul className="menubar_wrap">
-            <li className="menubar_item">프로모션</li>
-            <li className="menubar_item">상품판매</li>
-            <li className="menubar_item">쇼룸</li>
-            <li className="menubar_item">커뮤니티</li>
-          </ul>
-        </div>
         <div
           className="menubartoggle"
-          ref={menubarRef}
+          ref={toggleRef}
           onClick={() => {
-            openMenubar();
+            ControlMenubar();
           }}
         >
           <span className="span_top"></span>
@@ -124,16 +117,34 @@ export default function Header() {
           </li>
         </ul>
       </div>
+      <div className="menubar close" ref={menubarRef}>
+        <div
+          className="close_icon"
+          onClick={() => {
+            ControlMenubar();
+          }}
+        >
+          X
+        </div>
+        <ul className="menubar_wrap">
+          <li className="menubar_item">프로모션</li>
+          <li className="menubar_item">상품판매</li>
+          <li className="menubar_item">쇼룸</li>
+          <li className="menubar_item">커뮤니티</li>
+        </ul>
+      </div>
     </section>
   );
 
-  function openMenubar() {
-    if (menubarControlState == false) {
-      menubarRef.current!.className = "menubartoggle open";
-      setMenubarControlState(true);
-    } else if (menubarControlState == true) {
-      menubarRef.current!.className = "menubartoggle close";
-      setMenubarControlState(false);
+  function ControlMenubar() {
+    if (toggleControlState == false) {
+      toggleRef.current!.className = "menubartoggle open";
+      menubarRef.current!.className = "menubar";
+      setToggleControlState(true);
+    } else if (toggleControlState == true) {
+      toggleRef.current!.className = "menubartoggle close";
+      menubarRef.current!.className = "menubar close";
+      setToggleControlState(false);
     }
   }
 }
