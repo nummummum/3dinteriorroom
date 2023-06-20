@@ -1,7 +1,9 @@
+import { useNavigate } from "react-router-dom";
 import BannerCard from "../components/BannerCard";
 import ProductObjectCard from "../components/ProductObjectCard";
 import "./MainPage.scss";
 export default function MainPage() {
+  const navigate = useNavigate();
   return (
     <section className="mainpage">
       <BannerCard
@@ -9,6 +11,7 @@ export default function MainPage() {
         지금 만나보세요"
         btntitle="Buy now"
         imgUrl="images/bannercard1.jpg"
+        goUrl="/product"
       />
       <h4 className="main_subtitle">인기 상품</h4>
       <div className="popular_wrap">
@@ -44,7 +47,10 @@ export default function MainPage() {
       </ul>
       <div className="space"></div>
       <div className="btncenter">
-        <div className="btnwrap black reverse">
+        <div
+          className="btnwrap black reverse"
+          onClick={() => navigate("/product")}
+        >
           <p>더보기</p>
         </div>
         <div className="space"></div>
@@ -53,6 +59,7 @@ export default function MainPage() {
         title="자신만의 인테리어 룸을 만들 수 있습니다<br/>그리고 나눌 수 있습니다"
         btntitle="Get Started"
         imgUrl="/images/bannercard2.jpg"
+        goUrl="/interior"
       />
       <h4 className="main_subtitle">인기 쇼룸</h4>
       <ul className="popularproduct_wrap">
@@ -77,7 +84,10 @@ export default function MainPage() {
       </ul>
       <div className="space"></div>
       <div className="btncenter">
-        <div className="btnwrap black reverse">
+        <div
+          className="btnwrap black reverse"
+          onClick={() => navigate("/showroom")}
+        >
           <p>더보기</p>
         </div>
       </div>

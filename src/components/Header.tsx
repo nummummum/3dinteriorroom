@@ -127,10 +127,42 @@ export default function Header() {
           X
         </div>
         <ul className="menubar_wrap">
-          <li className="menubar_item">프로모션</li>
-          <li className="menubar_item">상품판매</li>
-          <li className="menubar_item">쇼룸</li>
-          <li className="menubar_item">커뮤니티</li>
+          <li
+            className="menubar_item"
+            onClick={() => {
+              navigate("/promotion");
+              ControlMenubar();
+            }}
+          >
+            프로모션
+          </li>
+          <li
+            className="menubar_item"
+            onClick={() => {
+              navigate("/product");
+              ControlMenubar();
+            }}
+          >
+            상품판매
+          </li>
+          <li
+            className="menubar_item"
+            onClick={() => {
+              navigate("/showroom");
+              ControlMenubar();
+            }}
+          >
+            쇼룸
+          </li>
+          <li
+            className="menubar_item"
+            onClick={() => {
+              navigate("/community");
+              ControlMenubar();
+            }}
+          >
+            커뮤니티
+          </li>
         </ul>
       </div>
     </section>

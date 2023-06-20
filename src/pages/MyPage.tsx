@@ -354,7 +354,7 @@ export default function MyPage() {
                 <p className="mypage_main_title">회원탈퇴하기</p>
                 <div className="horizen_bar" />
                 <div className="fire_password">
-                  <p>비밀번호 변경</p>
+                  <p>비밀번호 입력</p>
                   <input type="password" />
                 </div>
                 <div className="btnwrap black reverse radius15">
